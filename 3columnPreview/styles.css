@@ -1,0 +1,86 @@
+body {
+    font-size: 15px;
+    background: hsl(0, 0%, 95%)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 6em;
+    margin-bottom: 5em;
+    padding: 0;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-detail {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+.card-btn {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.5em 2em;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 16px;
+}
+
+.column {
+    padding: 2em;
+
+}
+
+.left {
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(31, 77%, 52%);
+    border-radius: 4px 4px 0px 0px;
+}
+
+.left .card-btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.middle{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.middle .card-btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.right{
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(179, 100%, 13%);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.right .card-btn{
+    color: hsl(179, 100%, 13%)
+}
+
+@media screen and (min-width: 850px) {
+    .container {
+        flex-direction: row;
+        margin-top: 15em;
+        margin-bottom: 10em;
+    }
+
+    .left {
+        background-color: hsl(31, 77%, 52%);
+        border: 1px solid hsl(31, 77%, 52%);
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    .right{
+        background-color: hsl(179, 100%, 13%);
+        border: 1px solid hsl(179, 100%, 13%);
+        border-radius: 0px 4px 4px 0px;
+    }
+}
